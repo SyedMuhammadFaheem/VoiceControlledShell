@@ -582,36 +582,10 @@ def alina_reply(text):
 
     
     elif "who created you" in text:
-        s = "Following computer scientists created me:\n1. Azain Adam\n2. Muhammad Rooman\n3. Owais Danish."
+        s = "Following computer scientists created me:\n1. Muhammad Faheem\n2. Mohsin Ali Mirza\n3. Ahmad Aleem."
         alina_talk(s)
         print(s)
-        
-        alina_talk("Do you want to see any of the creator")
-        r = alina_listen()
-        name = r
-        print(name)
-        if 'yes' in name:
-            ss = "You want to see whom?"
-            print(ss)
-            alina_talk(ss)
-            ss = "Call 1 for Azain 2 for Rooman and 3 for Owais"
-            #alina_talk(ss)
-            print("Call Any Number")
-            print("1 For Azain 2 For Rooman 3 For Owais")
-            name = alina_listen()
-            name = name
-            if "1" in name:
-                os.system("eog Azain.jpeg")
-            elif "2" in name:
-                os.system("eog Rooman.jpeg")
-            elif "3" in name:
-                os.system("eog Owais.jpeg")
-            else:
-                print("You called invalid person")
-                alina_talk("You called invalid person.")
-        else:
-            print("Exiting...")
-            alina_talk("Exiting.")
+
         
     elif "goodbye" in text:
             return
@@ -628,7 +602,7 @@ def alina_reply(text):
 def execute_assistant():
     # personalize name
     alina_talk('Hi this is Alina, I am here to help you.')
-    alina_talk('Hi Boss, what can I do for you?')
+    alina_talk('Hi Miss Safia, what can I do for you?')
     
     while True:
         listen_alina = alina_listen()
